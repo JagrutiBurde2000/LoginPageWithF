@@ -1,0 +1,151 @@
+*{
+    position: relative;
+}
+body{
+    
+    width:100%;
+    height: 100vh;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+   
+    font-family: 'Inter', sans-serif;
+    background: url(http://www.exceptnothing.com/wp-content/uploads/2011/12/colorPulse_V4.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+   
+    animation:  moveFromLeftToCenter 3s ease-in-out forwards;;
+}
+@keyframes moveFromLeftToCenter {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+::placeholder {
+    color:white;
+    opacity: 1;
+    font-size: 20px;
+  }
+  
+#loginForm{
+border:1px solid black;
+border-radius: 10px;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 30px;
+
+}
+
+
+#signupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border:1px solid black;
+border-radius: 10px;
+
+}
+#name, #username{
+background: transparent;
+margin-top: 5px;
+margin-bottom: 15px;
+width:300px;
+padding:8px;
+border: none;
+outline: none;
+border-bottom: 1px solid black;
+font-size:20px;
+
+}
+#email, #signupEmail{
+    background: transparent;
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    width:300px; 
+    padding:8px;
+    border: none;
+outline: none;
+border-bottom: 1px solid black;
+    font-size: 20px;
+    
+    
+}
+#password , #signupPassword, #confirmPassword{
+    background: transparent;
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    width:300px; 
+    padding:8px;
+    border: none;
+outline: none;
+border-bottom: 1px solid black;
+    font-size: 20px;
+  
+}
+#loginbutton , #signupbtn, #SignUp, #return , #logout { 
+    border-radius:20px;
+    padding:8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    background: #fff;
+   
+}
+
+#loginbutton:hover, #signupbtn:hover, #SignUp:hover, #return:hover, #logout:hover{
+   background-color:  rgb(48,129,237);
+    color: white;
+}
+
+@media screen  and (max-width:300px){
+  
+        #name, #username{
+            background: transparent;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            width:200px;
+            padding:8px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+            font-size: 16px;
+            
+            }
+            #password , #signupPassword, #confirmPassword{
+                background: transparent;
+                margin-top: 5px;
+                margin-bottom: 15px; 
+                width:200px; 
+                padding:8px;
+                border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+                font-size: 16px;
+            }
+            #email, #signupEmail{
+                background: transparent;
+                margin-top: 5px;
+                margin-bottom: 15px; 
+                width:200px; 
+                padding:8px;
+                border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+                font-size: 16px;
+            }
+        
+}
